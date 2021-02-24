@@ -18,7 +18,8 @@
     "lint:js": "eslint --max-warnings 73 src spec",
     "lint:types": "tsc --noEmit",
     "test": "jest spec/ --coverage --testEnvironment node",
-    "test:watch": "jest spec/ --coverage --testEnvironment node --watch"
+    "test:watch": "jest spec/ --coverage --testEnvironment node --watch",
+    "build:thread": "node node_modules/react-native/local-cli/cli.js bundle --dev false --assets-dest ./android/app/src/main/res/ --entry-file node_modules/matrix-js-sdk/lib/crypto/threads/OlmDevice/OlmDevice.thread.js --platform android --bundle-output ./android/app/src/main/assets/threads/node_modules/matrix-js-sdk/lib/crypto/threads/OlmDevice/OlmDevice.thread.bundle"
   },
   "repository": {
     "type": "git",
@@ -55,6 +56,7 @@
     "content-type": "^1.0.4",
     "loglevel": "^1.7.1",
     "qs": "^6.9.6",
+    "react-native-threads": "^0.0.19",
     "request": "^2.88.2",
     "unhomoglyph": "^1.0.6"
   },

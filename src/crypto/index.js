@@ -27,7 +27,7 @@ import {ReEmitter} from '../ReEmitter';
 import {logger} from '../logger';
 import * as utils from "../utils";
 import {sleep} from "../utils";
-import {OlmDevice} from "./OlmDevice";
+import OlmDevice from "./OlmDeviceThreadManager";
 import * as olmlib from "./olmlib";
 import {DeviceList} from "./DeviceList";
 import {DeviceInfo} from "./deviceinfo";
